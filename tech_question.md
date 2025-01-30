@@ -26,12 +26,12 @@ For each pair, calculate the _distance_ between the two numbers and add up all t
 
 Using the example lists above, the pairs and their distances are as follows:
 
--   The smallest number in the left list is `1`, paired with the smallest in the right list, `3`. The distance is `2`.
--   The second-smallest in the left list, `2`, pairs with the next `3` from the right list. The distance is `1`.
--   The third-smallest in both lists is `3`, resulting in a distance of `0`.
--   Next, `3` pairs with `4`, for a distance of `1`.
--   The next `3` pairs with `5`, for a distance of `2`.
--   Finally, the largest number in the left list, `4`, pairs with the largest in the right list, `9`, for a distance of `5`.
+- The smallest number in the left list is `1`, paired with the smallest in the right list, `3`. The distance is `2`.
+- The second-smallest in the left list, `2`, pairs with the next `3` from the right list. The distance is `1`.
+- The third-smallest in both lists is `3`, resulting in a distance of `0`.
+- Next, `3` pairs with `4`, for a distance of `1`.
+- The next `3` pairs with `5`, for a distance of `2`.
+- Finally, the largest number in the left list, `4`, pairs with the largest in the right list, `9`, for a distance of `5`.
 
 To calculate the _total distance_ between the lists, sum the distances for all pairs: `2 + 1 + 0 + 1 + 2 + 5`, which equals `*11*`.
 
