@@ -1,10 +1,18 @@
-import express, { Express, Request, Response, Application } from "express";
+import express, { Request, Response, Application } from "express";
+
+import { readFile } from "./common/functions";
 
 const app: Application = express();
 const port = 3000;
 
-app.get("/", (req: Request, res: Response) => {
-  res.send("Welcome to Express & TypeScript Server");
+app.get("/", async (req: Request, res: Response) => {
+  try {
+    const { list1, list2 } = await readFile("./input.txt");
+    const sumOfDifferences = list1.reduce((sum, num, index) => sum + Math.abs(num - list2[index]), 0);
+    res.status(200).json({ sumOfDifferences });
+  } catch (error) {
+    res.status(500).json({ error: "Internal server error" });
+  }
 });
 
 app.listen(port, () => {
