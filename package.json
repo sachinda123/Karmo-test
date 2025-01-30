@@ -1,0 +1,32 @@
+{
+  "name": "karmo-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sachinda123/Karmo-test.git"
+  },
+  "author": "sachinda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sachinda123/Karmo-test/issues"
+  },
+  "homepage": "https://github.com/sachinda123/Karmo-test#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.7.3"
+  }
+}
